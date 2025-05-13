@@ -1,0 +1,27 @@
+body, html, #root {
+  margin: 0;
+  height: 100%;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.app {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-container {
+  flex: 1;
+}
+.star-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff9c4;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 1px 1px 4px #000;
+}

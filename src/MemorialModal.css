@@ -1,0 +1,54 @@
+/* Fondo difuminado oscuro */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed; /* Esto asegura que cubra toda la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Asegura que esté por debajo del modal */
+}
+
+/* Tarjeta modal */
+.modal {
+  background: white;
+  color: black;
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative; /* Asegura que el modal tenga un contexto de apilamiento */
+  z-index: 1000; /* El modal debe estar por encima del overlay */
+}
+
+/* Imagen */
+.dog-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+/* Botón */
+button {
+  background-color: #f5a623;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
