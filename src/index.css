@@ -25,3 +25,32 @@ body, html, #root {
   font-family: 'Rock Salt', cursive;
   text-shadow: 1px 1px 4px #000;
 }
+
+.special-star {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 1; /* Asegúrate de que sea menor al modal */
+}
+
+.special-star:hover {
+  transform: scale(1.1);
+}
+
+.special-star__image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+}
