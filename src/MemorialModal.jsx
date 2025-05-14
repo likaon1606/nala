@@ -30,7 +30,7 @@ export default function MemorialModal({ isOpen, onClose }) {
       overlayClassName="overlay"
     >
       <h2>🌈 En memoria de Nala</h2>
-      <img src={imagenAleatoria} alt="Nala" className="dog-image" />
+      <img src={imagenAleatoria} alt="Nala" className="dog-image" loading='lazy'/>
       <p>{fraseAleatoria}</p>
       <button onClick={onClose}>Cerrar</button>
     </Modal>
